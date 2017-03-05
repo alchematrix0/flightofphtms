@@ -38,3 +38,29 @@
   src: local('Source Code Pro Semibold'), local('SourceCodePro-Semibold'), url(https://fonts.gstatic.com/s/sourcecodepro/v6/leqv3v-yTsJNC7nFznSMqSOFnW3Jk0f09zW_Yln67Ac.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+
+#main .inner img.title-logo {
+  max-width: 50vw;
+  margin-bottom: 0.5em;
+}
+@media (max-width: 480px) {
+  #main .inner img.title-logo {
+    max-width: 80vw;
+    margin-bottom: 0;
+  }
+}
+#main .inner section p {
+  text-shadow: 1px 1px 1px black;
+}
+div#portfolio {
+  height: 60vh;
+}
+@media (max-width: 480px and orientation: landscape) {
+  div#portfolio {
+    width: 90vw;
+    height: 90vh;
+  }
+  #main .inner {
+    padding-top: 1rem;
+  }
+}
